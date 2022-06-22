@@ -1,7 +1,8 @@
 import calendar
 import pandas as pd
 
-month = calendar.monthcalendar(2022,5)
+monthNumber = int(input("Insira o número do mês: "))
+month = calendar.monthcalendar(2022,monthNumber)
 
 def day_names(month):
     monthdaysdic = {'segunda':[],'terça':[],'quarta':[],'quinta':[],'sexta':[],'sabado':[],'domingo':[]}
